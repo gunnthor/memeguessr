@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import { Game } from "@/components/Game";
 import { dailySeed } from "@/lib/game";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Play — Guess When the Meme Went Viral",
+  description:
+    "Play MemeGuessr: drag the timeline to guess the month each meme went viral. Five rounds, score out of 25,000, and share your result.",
+  alternates: { canonical: "/play" },
+};
 
 export default function PlayPage({
   searchParams,

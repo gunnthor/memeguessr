@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#020617"/>
+  <rect width="64" height="64" rx="14" fill="url(#g)" opacity="0.25"/>
+  <defs>
+    <radialGradient id="g" cx="0.5" cy="0" r="0.9">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- timeline track -->
+  <rect x="12" y="40" width="40" height="4" rx="2" fill="#475569"/>
+  <!-- timeline marker -->
+  <circle cx="40" cy="42" r="7" fill="#7c3aed" stroke="#ede9fe" stroke-width="2.5"/>
+  <!-- M -->
+  <path d="M16 30 V16 L24 26 L32 16 V30" fill="none" stroke="#ede9fe" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="44" cy="20" r="3.5" fill="#a78bfa"/>
+</svg>

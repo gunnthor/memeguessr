@@ -21,6 +21,8 @@ export function generateMetadata({
   return {
     title,
     description: "Guess when each meme went viral. Can you beat my score?",
+    // Infinite score/grid permutations — great for sharing, not for indexing.
+    robots: { index: false, follow: true },
     openGraph: {
       title,
       description: "Guess when each meme went viral. Can you beat my score?",
