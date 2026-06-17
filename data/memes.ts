@@ -20,11 +20,17 @@ export type Meme = {
   blurb: string;
   /** Citation URL for the date — shown as "Source" on reveal. */
   source: string;
+  /**
+   * Optional illustrative example of the meme in use — typically a
+   * representative caption in the meme's format. Shown on reveal when present.
+   */
+  example?: string;
 };
 
 export const MEMES: Meme[] = [
   {
     id: "disaster-girl",
+    example: "Captioned over a calm selfie: “me walking away after starting drama in the group chat.”",
     name: "Disaster Girl",
     image: "https://i.imgflip.com/23ls.jpg",
     viralDate: "2008-01-15",
@@ -34,6 +40,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "yo-dawg",
+    example: "“Yo dawg, I heard you like memes, so I put a meme in your meme so you can guess while you guess.”",
     name: "Yo Dawg (Xzibit)",
     image: "https://i.imgflip.com/26hg.jpg",
     viralDate: "2009-01-15",
@@ -43,6 +50,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "batman-slapping-robin",
+    example: "Robin: “Maybe we should add tests—” Batman *slaps*: used to shut down any bad take.",
     name: "Batman Slapping Robin (My Parents Are Dead)",
     image: "https://i.imgflip.com/9ehk.jpg",
     viralDate: "2009-11-15",
@@ -52,6 +60,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "x-all-the-y",
+    example: "“Reply to ALL the emails!”",
     name: "X All the Y",
     image: "https://i.imgflip.com/1bh9.jpg",
     viralDate: "2010-06-15",
@@ -61,6 +70,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "too-damn-high",
+    example: "“My screen time is too damn high!”",
     name: "The Rent Is Too Damn High",
     image: "https://i.imgflip.com/1bik.jpg",
     viralDate: "2010-10-15",
@@ -70,6 +80,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "one-does-not-simply",
+    example: "“One does not simply finish a single bag of chips.”",
     name: "One Does Not Simply",
     image: "https://i.imgflip.com/1bij.jpg",
     viralDate: "2011-01-15",
@@ -79,6 +90,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "scumbag-steve",
+    example: "“Borrows your charger / never gives it back.”",
     name: "Scumbag Steve",
     image: "https://i.imgflip.com/1bgy.jpg",
     viralDate: "2011-01-15",
@@ -88,6 +100,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "futurama-fry",
+    example: "“Not sure if actually tired or just bored.”",
     name: "Futurama Fry (Not Sure If)",
     image: "https://i.imgflip.com/1bgw.jpg",
     viralDate: "2011-02-15",
@@ -97,6 +110,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "ancient-aliens",
+    example: "“I’m not saying it was aliens… but it was aliens.”",
     name: "Ancient Aliens (Giorgio)",
     image: "https://i.imgflip.com/26am.jpg",
     viralDate: "2011-03-15",
@@ -106,6 +120,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "most-interesting-man",
+    example: "“I don’t always test my code, but when I do, I do it in production.”",
     name: "The Most Interesting Man in the World",
     image: "https://i.imgflip.com/1bh8.jpg",
     viralDate: "2011-03-15",
@@ -115,6 +130,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "success-kid",
+    example: "“Sent the risky text / got a good reply.”",
     name: "Success Kid",
     image: "https://i.imgflip.com/1bhk.jpg",
     viralDate: "2011-04-15",
@@ -124,6 +140,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "y-u-no",
+    example: "“Phone, Y U NO hold a charge?!”",
     name: "Y U No",
     image: "https://i.imgflip.com/1bh3.jpg",
     viralDate: "2011-05-15",
@@ -133,6 +150,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "philosoraptor",
+    example: "“If you expect the unexpected, doesn’t that make it… expected?”",
     name: "Philosoraptor",
     image: "https://i.imgflip.com/1bgs.jpg",
     viralDate: "2011-06-15",
@@ -142,6 +160,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "good-guy-greg",
+    example: "“Borrows your lighter / actually gives it back.”",
     name: "Good Guy Greg",
     image: "https://i.imgflip.com/1bgx.jpg",
     viralDate: "2011-08-15",
@@ -151,6 +170,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "hide-the-pain-harold",
+    example: "Forced smile when someone asks if you’re okay: “I’m fine.”",
     name: "Hide the Pain Harold",
     image: "https://i.imgflip.com/gk5el.jpg",
     viralDate: "2011-09-15",
@@ -160,6 +180,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "socially-awkward-penguin",
+    example: "“Waves back / they were waving at someone behind you.”",
     name: "Socially Awkward Penguin",
     image: "https://i.imgflip.com/1bio.jpg",
     viralDate: "2011-09-15",
@@ -169,6 +190,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "first-world-problems",
+    example: "“My charger is across the room and I’m already in bed.”",
     name: "First World Problems",
     image: "https://i.imgflip.com/1bhf.jpg",
     viralDate: "2011-10-15",
@@ -178,6 +200,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "x-everywhere",
+    example: "Buzz to Woody: “Bugs… bugs everywhere.”",
     name: "X, X Everywhere (Buzz Lightyear)",
     image: "https://i.imgflip.com/1ihzfe.jpg",
     viralDate: "2012-01-15",
@@ -187,6 +210,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "brace-yourselves",
+    example: "“Brace yourselves — Monday is coming.”",
     name: "Brace Yourselves (X Is Coming)",
     image: "https://i.imgflip.com/1bhm.jpg",
     viralDate: "2012-01-15",
@@ -196,6 +220,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "bad-luck-brian",
+    example: "“Tries to break up a fight / gets arrested.”",
     name: "Bad Luck Brian",
     image: "https://i.imgflip.com/1bip.jpg",
     viralDate: "2012-01-15",
@@ -205,6 +230,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "matrix-morpheus",
+    example: "“What if I told you the cake was a lie?”",
     name: "Matrix Morpheus (What If I Told You)",
     image: "https://i.imgflip.com/25w3.jpg",
     viralDate: "2012-02-15",
@@ -214,6 +240,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "ermahgerd",
+    example: "“ERMAHGERD! FRENCH FRIES!”",
     name: "Ermahgerd",
     image: "https://i.imgflip.com/26ae.jpg",
     viralDate: "2012-03-15",
@@ -223,6 +250,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "confession-bear",
+    example: "“I’m 30 and still don’t know how to do my taxes.”",
     name: "Confession Bear",
     image: "https://i.imgflip.com/25wb.jpg",
     viralDate: "2012-03-15",
@@ -232,6 +260,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "skeptical-third-world-kid",
+    example: "“So you’re telling me… you waited in line overnight for a phone?”",
     name: "Third World Skeptical Kid",
     image: "https://i.imgflip.com/265k.jpg",
     viralDate: "2012-04-15",
@@ -241,6 +270,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "10-guy",
+    example: "“What if money is just… paper we all agreed to believe in?”",
     name: "10 Guy (Stoner Stanley)",
     image: "https://i.imgflip.com/269s.jpg",
     viralDate: "2012-04-15",
@@ -250,6 +280,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "grandma-finds-internet",
+    example: "“Back in my day / we called this ‘the Google.’”",
     name: "Grandma Finds the Internet",
     image: "https://i.imgflip.com/1bhw.jpg",
     viralDate: "2012-05-15",
@@ -259,6 +290,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "skeptical-baby",
+    example: "Side-eye: “So you ‘forgot’ to reply for three days?”",
     name: "Skeptical Baby",
     image: "https://i.imgflip.com/26hb.jpg",
     viralDate: "2012-05-15",
@@ -268,6 +300,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "overly-attached-girlfriend",
+    example: "“Why aren’t you texting back? I can see you’re online.”",
     name: "Overly Attached Girlfriend",
     image: "https://i.imgflip.com/25w8.jpg",
     viralDate: "2012-06-15",
@@ -277,6 +310,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "aint-nobody-got-time",
+    example: "“Read the 40-page terms of service? Ain’t nobody got time for that.”",
     name: "Ain't Nobody Got Time for That",
     image: "https://i.imgflip.com/9hhr.jpg",
     viralDate: "2012-10-15",
@@ -286,6 +320,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "bike-fall",
+    example: "Riding along fine, then jamming a stick in your own wheel: “me self-sabotaging.”",
     name: "Bike Fall (Baton Roue)",
     image: "https://i.imgflip.com/1b42wl.jpg",
     viralDate: "2012-10-15",
@@ -295,6 +330,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "conspiracy-keanu",
+    example: "“What if oxygen is slowly killing us… and we just call it ‘living’?”",
     name: "Conspiracy Keanu",
     image: "https://i.imgflip.com/1bin.jpg",
     viralDate: "2012-11-15",
@@ -304,6 +340,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "grumpy-cat",
+    example: "“I had fun once. It was awful.”",
     name: "Grumpy Cat",
     image: "https://i.imgflip.com/8p0a.jpg",
     viralDate: "2012-12-15",
@@ -313,6 +350,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "oprah-you-get-a",
+    example: "“You get a bug! And you get a bug! Everybody gets a bug!”",
     name: "Oprah You Get A",
     image: "https://i.imgflip.com/gtj5t.jpg",
     viralDate: "2013-01-15",
@@ -322,6 +360,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "sudden-clarity-clarence",
+    example: "“Wait… if I’m always tired, maybe I should just sleep more?”",
     name: "Sudden Clarity Clarence",
     image: "https://i.imgflip.com/25w4.jpg",
     viralDate: "2013-01-15",
@@ -331,6 +370,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "leonardo-cheers",
+    example: "Raising a glass: “to the devs who actually comment their code.”",
     name: "Leonardo DiCaprio Cheers",
     image: "https://i.imgflip.com/39t1o.jpg",
     viralDate: "2013-05-15",
@@ -340,6 +380,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "im-the-captain-now",
+    example: "“Look at me. I’m the project manager now.”",
     name: "I'm the Captain Now",
     image: "https://i.imgflip.com/hlmst.jpg",
     viralDate: "2013-11-15",
@@ -349,6 +390,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "yall-got-any-more",
+    example: "“Y’all got any more of them… weekend hours?”",
     name: "Y'all Got Any More of...",
     image: "https://i.imgflip.com/21uy0f.jpg",
     viralDate: "2013-12-15",
@@ -358,6 +400,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "but-thats-none-of-my-business",
+    example: "“Some people leave early every day and still complain. But that’s none of my business.”",
     name: "But That's None of My Business",
     image: "https://i.imgflip.com/9sw43.jpg",
     viralDate: "2014-06-15",
@@ -367,6 +410,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "waiting-skeleton",
+    example: "“Still waiting on that ‘I’ll text you back in 5 minutes.’”",
     name: "Waiting Skeleton",
     image: "https://i.imgflip.com/2fm6x.jpg",
     viralDate: "2015-01-15",
@@ -376,6 +420,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "boardroom-suggestion",
+    example: "Boss: “Ideas to cut costs?” “Stop wasting money.” *thrown out the window*",
     name: "Boardroom Meeting Suggestion",
     image: "https://i.imgflip.com/m78d.jpg",
     viralDate: "2015-09-15",
@@ -385,6 +430,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "drakeposting",
+    example: "Drake rejects “writing tests after” / approves “writing tests first.”",
     name: "Drakeposting",
     image: "https://i.imgflip.com/30b1gx.jpg",
     viralDate: "2015-12-15",
@@ -394,6 +440,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "this-is-fine",
+    example: "Dog sipping coffee in a burning room: “This is fine.”",
     name: "This Is Fine",
     image: "https://i.imgflip.com/wxica.jpg",
     viralDate: "2016-01-15",
@@ -403,6 +450,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "be-like-bill",
+    example: "“Bill sees a spoiler. Bill doesn’t click. Be like Bill.”",
     name: "Be Like Bill",
     image: "https://i.imgflip.com/xh3me.jpg",
     viralDate: "2016-01-15",
@@ -412,6 +460,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "squidward-window",
+    example: "Staring out the window at everyone having fun without you.",
     name: "Squidward Looking Out the Window",
     image: "https://i.imgflip.com/145qvv.jpg",
     viralDate: "2016-03-15",
@@ -421,6 +470,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "the-rock-driving",
+    example: "Passenger: “You said you’d do the dishes.” Rock turns, alarmed: “…the dishes.”",
     name: "The Rock Driving",
     image: "https://i.imgflip.com/grr.jpg",
     viralDate: "2016-06-15",
@@ -430,6 +480,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "daily-struggle",
+    example: "Two buttons, sweating: “Reply now” vs. “Pretend I didn’t see it.”",
     name: "Two Buttons / Daily Struggle",
     image: "https://i.imgflip.com/1g8my4.jpg",
     viralDate: "2016-06-15",
@@ -439,6 +490,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "math-lady",
+    example: "Equations everywhere: “trying to split the bill with tip three ways.”",
     name: "Math Lady / Confused Lady",
     image: "https://i.imgflip.com/1c81c1.jpg",
     viralDate: "2016-06-15",
@@ -448,6 +500,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "arthur-fist",
+    example: "Clenched fist: “when the wifi drops right before the upload finishes.”",
     name: "Arthur Fist",
     image: "https://i.imgflip.com/1866qe.jpg",
     viralDate: "2016-08-15",
@@ -457,6 +510,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "sad-pablo-escobar",
+    example: "Waiting alone: “me refreshing my inbox for a reply that isn’t coming.”",
     name: "Sad Pablo Escobar (Waiting)",
     image: "https://i.imgflip.com/1c1uej.jpg",
     viralDate: "2016-09-15",
@@ -466,6 +520,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "evil-kermit",
+    example: "Me: “I should sleep early.” Hooded Kermit: “one more episode.”",
     name: "Evil Kermit",
     image: "https://i.imgflip.com/1e7ql7.jpg",
     viralDate: "2016-11-15",
@@ -475,6 +530,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "roll-safe",
+    example: "Taps temple: “Can’t fail the exam if you never take it.”",
     name: "Roll Safe (Think About It)",
     image: "https://i.imgflip.com/1h7in3.jpg",
     viralDate: "2017-01-15",
@@ -484,6 +540,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "trump-bill-signing",
+    example: "Holding up the document: “I officially have no idea what I’m doing.”",
     name: "Trump Bill Signing",
     image: "https://i.imgflip.com/1ii4oc.jpg",
     viralDate: "2017-01-23",
@@ -493,6 +550,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "left-exit-12",
+    example: "Car swerving from “do it properly” to “hardcode it and move on.”",
     name: "Left Exit 12 Off Ramp",
     image: "https://i.imgflip.com/22bdq6.jpg",
     viralDate: "2017-02-15",
@@ -502,6 +560,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "expanding-brain",
+    example: "Small brain: “strong password” → glowing brain: “password123.”",
     name: "Expanding Brain",
     image: "https://i.imgflip.com/1jwhww.jpg",
     viralDate: "2017-02-15",
@@ -510,6 +569,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "maury-lie-detector",
+    example: "“‘I’ll start the diet Monday.’ That was a lie.”",
     name: "Maury Lie Detector",
     image: "https://i.imgflip.com/9iz9.jpg",
     viralDate: "2017-02-15",
@@ -519,6 +579,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "sleeping-shaq",
+    example: "Asleep at “should I work out” / wide awake at “should I order pizza.”",
     name: "Sleeping Shaq",
     image: "https://i.imgflip.com/1nck6k.jpg",
     viralDate: "2017-03-15",
@@ -528,6 +589,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "friendship-ended",
+    example: "“Friendship ended with Monday. Now Friday is my best friend.”",
     name: "Friendship Ended (with Mudasir)",
     image: "https://i.imgflip.com/29v4rt.jpg",
     viralDate: "2017-04-15",
@@ -537,6 +599,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "who-killed-hannibal",
+    example: "*shoots* “Why would I delete the production database?” “I don’t know!”",
     name: "Who Killed Hannibal",
     image: "https://i.imgflip.com/28s2gu.jpg",
     viralDate: "2017-05-15",
@@ -546,6 +609,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "mocking-spongebob",
+    example: "“i CaN’t WaIt To FiX tHe BuG i JuSt CrEaTeD.”",
     name: "Mocking SpongeBob",
     image: "https://i.imgflip.com/1otk96.jpg",
     viralDate: "2017-05-15",
@@ -555,6 +619,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "scroll-of-truth",
+    example: "Reads the scroll: “you are the problem.” → “NOOOO!”",
     name: "The Scroll of Truth",
     image: "https://i.imgflip.com/21tqf4.jpg",
     viralDate: "2017-06-15",
@@ -564,6 +629,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "unsettled-tom",
+    example: "Side-eye to camera: “when they say ‘we need to talk.’”",
     name: "Unsettled Tom",
     image: "https://i.imgflip.com/2wifvo.jpg",
     viralDate: "2017-06-15",
@@ -573,6 +639,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "inhaling-seagull",
+    example: "*inhales* “AAAAA” — about to belt the chorus of your favorite song.",
     name: "Inhaling Seagull",
     image: "https://i.imgflip.com/1w7ygt.jpg",
     viralDate: "2017-07-15",
@@ -582,6 +649,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "running-away-balloon",
+    example: "Reaching for the “productivity” balloon, held back by a weight labeled “one more scroll.”",
     name: "Running Away Balloon",
     image: "https://i.imgflip.com/261o3j.jpg",
     viralDate: "2017-08-15",
@@ -591,6 +659,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "distracted-boyfriend",
+    example: "Boyfriend “me” eyeing “a shiny new side project,” girlfriend “the project I haven’t finished.”",
     name: "Distracted Boyfriend",
     image: "https://i.imgflip.com/1ur9b0.jpg",
     viralDate: "2017-08-15",
@@ -600,6 +669,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "gru-plan",
+    example: "Board: “start the plan → work the plan → never finish the plan” — double-take on the last panel.",
     name: "Gru's Plan",
     image: "https://i.imgflip.com/26jxvz.jpg",
     viralDate: "2017-11-15",
@@ -609,6 +679,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "pawn-stars",
+    example: "“I’ll give you $5 for it.” “Best I can do is $5.”",
     name: "Pawn Stars (Best I Can Do)",
     image: "https://i.imgflip.com/19vcz0.jpg",
     viralDate: "2017-12-15",
@@ -618,6 +689,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "pepe-silvia",
+    example: "At the corkboard: “There’s no Pepe Silvia! Who keeps scheduling these meetings?!”",
     name: "Charlie Conspiracy (Pepe Silvia)",
     image: "https://i.imgflip.com/1itoun.jpg",
     viralDate: "2018-03-15",
@@ -627,6 +699,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "change-my-mind",
+    example: "Table sign: “Pineapple belongs on pizza. Change my mind.”",
     name: "Change My Mind",
     image: "https://i.imgflip.com/24y43o.jpg",
     viralDate: "2018-03-15",
@@ -636,6 +709,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "american-chopper",
+    example: "Escalating shouting match: “Tabs!” / “Spaces!” / “TABS!”",
     name: "American Chopper Argument",
     image: "https://i.imgflip.com/2896ro.jpg",
     viralDate: "2018-04-15",
@@ -645,6 +719,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "blank-nut-button",
+    example: "Hand slamming a button labeled “reply-all to the entire company.”",
     name: "Blank Nut Button",
     image: "https://i.imgflip.com/1yxkcp.jpg",
     viralDate: "2018-05-15",
@@ -654,6 +729,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "is-this-a-pigeon",
+    example: "Gesturing at a butterfly: “Is this a productive day?” (it is not).",
     name: "Is This a Pigeon?",
     image: "https://i.imgflip.com/1o00in.jpg",
     viralDate: "2018-05-15",
@@ -663,6 +739,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "monkey-puppet",
+    example: "Side-eye to the camera right after saying something wrong in a meeting.",
     name: "Monkey Puppet (Awkward Look)",
     image: "https://i.imgflip.com/2gnnjh.jpg",
     viralDate: "2018-06-15",
@@ -672,6 +749,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "scooby-doo-mask-reveal",
+    example: "Unmasking “my sudden motivation” — it was “a good night’s sleep” all along.",
     name: "Scooby-Doo Mask Reveal",
     image: "https://i.imgflip.com/2eeunw.jpg",
     viralDate: "2018-06-15",
@@ -681,6 +759,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "spiderman-pointing",
+    example: "Two Spideys pointing: “frontend dev” and “backend dev” blaming each other.",
     name: "Spider-Man Pointing at Spider-Man",
     image: "https://i.imgflip.com/1tkjq9.jpg",
     viralDate: "2018-07-15",
@@ -690,6 +769,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "flex-tape",
+    example: "“Got a leak? *slaps tape* That’s a lot of damage!”",
     name: "Flex Tape (Phil Swift)",
     image: "https://i.imgflip.com/2reqtg.png",
     viralDate: "2018-07-15",
@@ -699,6 +779,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "hard-to-swallow-pills",
+    example: "Pill bottle: “You’re not stuck in traffic. You are traffic.”",
     name: "Hard to Swallow Pills",
     image: "https://i.imgflip.com/271ps6.jpg",
     viralDate: "2018-07-15",
@@ -708,6 +789,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "epic-handshake",
+    example: "Two arms clasping — “iOS users” + “Android users” — united by “hating the other one.”",
     name: "Epic Handshake (Predator)",
     image: "https://i.imgflip.com/28j0te.jpg",
     viralDate: "2018-08-15",
@@ -717,6 +799,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "car-salesman-slaps-roof",
+    example: "“This bad boy can fit so many unread emails in it.”",
     name: "Car Salesman Slaps Roof",
     image: "https://i.imgflip.com/2d3al6.jpg",
     viralDate: "2018-09-15",
@@ -726,6 +809,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "surprised-pikachu",
+    example: "“Skipped leg day for months. *can’t run now.* :O”",
     name: "Surprised Pikachu",
     image: "https://i.imgflip.com/2kbn1e.jpg",
     viralDate: "2018-10-15",
@@ -735,6 +819,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "uno-draw-25",
+    example: "“Apologize for the typo” / *picks up 25 cards.*",
     name: "UNO Draw 25 Cards",
     image: "https://i.imgflip.com/3lmzyx.jpg",
     viralDate: "2018-12-15",
@@ -744,6 +829,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "tuxedo-pooh",
+    example: "Plain Pooh: “I’m tired.” Tuxedo Pooh: “I require rest, posthaste.”",
     name: "Tuxedo Winnie the Pooh",
     image: "https://i.imgflip.com/2ybua0.png",
     viralDate: "2019-01-15",
@@ -753,6 +839,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "well-yes-but-actually-no",
+    example: "“Did you test it?” “Well, yes… but actually no.”",
     name: "Well Yes, But Actually No",
     image: "https://i.imgflip.com/2tn11b.jpg",
     viralDate: "2019-01-15",
@@ -762,6 +849,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "marked-safe-from",
+    example: "“Marked safe from replying to that email today.”",
     name: "Marked Safe From X",
     image: "https://i.imgflip.com/2odckz.jpg",
     viralDate: "2019-01-15",
@@ -771,6 +859,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "three-headed-dragon",
+    example: "Heads labeled “logic” and “reason,” plus a goofy one: “buying it anyway.”",
     name: "Three-Headed Dragon",
     image: "https://i.imgflip.com/33e92f.jpg",
     viralDate: "2019-04-15",
@@ -780,6 +869,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "clown-makeup",
+    example: "“I’ll just check one notification” → full clown → “…two hours later.”",
     name: "Clown Applying Makeup",
     image: "https://i.imgflip.com/38el31.jpg",
     viralDate: "2019-04-15",
@@ -789,6 +879,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "me-and-the-boys",
+    example: "“Me and the boys at 3am raiding the fridge for snacks.”",
     name: "Me and the Boys",
     image: "https://i.imgflip.com/320xfw.jpg",
     viralDate: "2019-04-15",
@@ -798,6 +889,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "woman-yelling-cat",
+    example: "Woman: “You said you’d be ready at 8!” Cat at the table: unbothered.",
     name: "Woman Yelling at a Cat",
     image: "https://i.imgflip.com/345v97.jpg",
     viralDate: "2019-05-15",
@@ -807,6 +899,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "ight-imma-head-out",
+    example: "The group chat goes silent → SpongeBob rising: “ight, imma head out.”",
     name: "SpongeBob: Ight Imma Head Out",
     image: "https://i.imgflip.com/392xtu.jpg",
     viralDate: "2019-05-15",
@@ -816,6 +909,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "stonks",
+    example: "Buy high, sell low: “Stonks.”",
     name: "Stonks",
     image: "https://i.imgflip.com/3388rw.png",
     viralDate: "2019-06-15",
@@ -825,6 +919,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "kombucha-girl",
+    example: "First sip: disgust → reconsiders → “…actually, maybe.”",
     name: "Kombucha Girl",
     image: "https://i.imgflip.com/39osmx.png",
     viralDate: "2019-08-15",
@@ -834,6 +929,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "soldier-sleeping-child",
+    example: "Child “me,” soldier “the deadline,” monster “the work I keep ignoring.”",
     name: "Soldier Protecting Sleeping Child",
     image: "https://i.imgflip.com/2tzo2k.jpg",
     viralDate: "2019-08-15",
@@ -843,6 +939,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "you-guys-getting-paid",
+    example: "“Wait… you guys are getting overtime?”",
     name: "You Guys Are Getting Paid?",
     image: "https://i.imgflip.com/2xscjb.png",
     viralDate: "2019-09-15",
@@ -852,6 +949,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "all-my-homies-hate",
+    example: "“F— Mondays. All my homies hate Mondays.”",
     name: "All My Homies Hate / Use",
     image: "https://i.imgflip.com/3kwur5.jpg",
     viralDate: "2019-09-15",
@@ -861,6 +959,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "sure-grandma",
+    example: "Newspaper: “I’ll wake up at 5am to work out.” “Sure, grandma, let’s get you to bed.”",
     name: "Sure Grandma, Let's Get You to Bed",
     image: "https://i.imgflip.com/4flche.jpg",
     viralDate: "2019-10-15",
@@ -870,6 +969,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "bernie-once-again-asking",
+    example: "“I am once again asking you to fix the bug you said was already fixed.”",
     name: "Bernie: I Am Once Again Asking",
     image: "https://i.imgflip.com/3oevdk.jpg",
     viralDate: "2019-11-15",
@@ -879,6 +979,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "buff-doge-cheems",
+    example: "Buff Doge: “code I wrote in 2015” / Cheems: “code I write now.”",
     name: "Buff Doge vs. Cheems",
     image: "https://i.imgflip.com/43a45p.png",
     viralDate: "2020-01-15",
@@ -888,6 +989,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "same-picture",
+    example: "“‘Working from home’ / ‘In a meeting’ — they’re the same picture.”",
     name: "They're the Same Picture (Pam)",
     image: "https://i.imgflip.com/2za3u1.jpg",
     viralDate: "2020-01-15",
@@ -897,6 +999,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "yes-chad",
+    example: "Soyboy: “You can’t just push straight to main!” Chad: “Yes.”",
     name: "Soyboy vs. Yes Chad",
     image: "https://i.imgflip.com/3umnr3.jpg",
     viralDate: "2020-01-15",
@@ -906,6 +1009,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "grant-gustin-grave",
+    example: "Peace sign beside a grave labeled “my New Year’s resolutions.”",
     name: "Grant Gustin Next to Oliver Queen's Grave",
     image: "https://i.imgflip.com/3nx72a.png",
     viralDate: "2020-01-28",
@@ -915,6 +1019,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "panik-kalm-panik",
+    example: "“Exam tomorrow” (PANIK) / “I studied” (KALM) / “wrong subject” (PANIK).",
     name: "Panik Kalm Panik",
     image: "https://i.imgflip.com/3qqcim.png",
     viralDate: "2020-02-15",
@@ -924,6 +1029,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "anime-girl-terminator",
+    example: "Girl “me” hiding under a desk “the deadline” from a Terminator labeled “Monday.”",
     name: "Anime Girl Hiding from a Terminator",
     image: "https://i.imgflip.com/3po4m7.jpg",
     viralDate: "2020-02-15",
@@ -933,6 +1039,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "mr-incredible-mad",
+    example: "Glaring: “when they say ‘quick question’ and it’s a 45-minute meeting.”",
     name: "Mr. Incredible Mad",
     image: "https://i.imgflip.com/39sjn7.png",
     viralDate: "2020-04-15",
@@ -942,6 +1049,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "undertaker-aj-styles",
+    example: "AJ (me) smug: “nailed the presentation” / Undertaker looming behind: “the Q&A.”",
     name: "Undertaker Standing Behind AJ Styles",
     image: "https://i.imgflip.com/3vfrmx.jpg",
     viralDate: "2020-04-15",
@@ -951,6 +1059,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "i-bet-hes-thinking",
+    example: "“I bet he’s thinking about other women.” Him: “do plants get lonely?”",
     name: "I Bet He's Thinking About Other Women",
     image: "https://i.imgflip.com/1tl71a.jpg",
     viralDate: "2020-05-15",
@@ -960,6 +1069,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "laughing-leo",
+    example: "Pointing and laughing at the screen: “finally, a relatable meme.”",
     name: "Laughing Leo (Django)",
     image: "https://i.imgflip.com/4acd7j.png",
     viralDate: "2020-06-15",
@@ -969,6 +1079,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "communist-bugs-bunny",
+    example: "“Your code? No.” Bugs Bunny: “Our code.”",
     name: "Communist Bugs Bunny",
     image: "https://i.imgflip.com/44eggm.png",
     viralDate: "2020-07-15",
@@ -978,6 +1089,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "always-has-been",
+    example: "Astronaut: “Wait, it’s all bugs?” Other: “Always has been.” *gun*",
     name: "Always Has Been (Among Us)",
     image: "https://i.imgflip.com/46e43q.png",
     viralDate: "2020-10-15",
@@ -987,6 +1099,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "they-dont-know",
+    example: "Alone at the party: “they don’t know I rehearsed this whole conversation in the shower.”",
     name: "They Don't Know",
     image: "https://i.imgflip.com/4pn1an.png",
     viralDate: "2020-11-15",
@@ -996,6 +1109,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "giga-chad",
+    example: "“Reads the documentation before asking. *GigaChad.*”",
     name: "Giga Chad",
     image: "https://i.imgflip.com/35bdwf.jpg",
     viralDate: "2021-06-15",
@@ -1005,6 +1119,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "gus-fring-not-the-same",
+    example: "“I also drink coffee. We are not the same.”",
     name: "Gus Fring: We Are Not the Same",
     image: "https://i.imgflip.com/5o32tt.png",
     viralDate: "2021-07-15",
@@ -1014,6 +1129,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "megamind-no-bitches",
+    example: "Zoomed in on Megamind: “No tests? :(”",
     name: "Megamind (No Bitches?)",
     image: "https://i.imgflip.com/65939r.jpg",
     viralDate: "2021-08-15",
@@ -1023,6 +1139,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "anakin-padme",
+    example: "“I’ll refactor it later.” “…right?” *silence* “Right?!”",
     name: "Anakin & Padmé (4 Panel)",
     image: "https://i.imgflip.com/5c7lwq.png",
     viralDate: "2021-09-15",
@@ -1032,6 +1149,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "trade-offer",
+    example: "“Trade offer: I receive your snacks, you receive nothing.”",
     name: "Trade Offer",
     image: "https://i.imgflip.com/54hjww.jpg",
     viralDate: "2021-09-15",
@@ -1041,6 +1159,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "squid-game",
+    example: "Red Light, Green Light: “me freezing the second the boss walks by.”",
     name: "Squid Game (Red Light)",
     image: "https://i.imgflip.com/98qr33.jpg",
     viralDate: "2021-10-15",
@@ -1050,6 +1169,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "bell-curve-midwit",
+    example: "Low-IQ and genius both: “just restart it.” Midwit: a 200-word technical explanation.",
     name: "IQ Bell Curve (Midwit)",
     image: "https://i.imgflip.com/8tw3vb.png",
     viralDate: "2022-01-15",
@@ -1059,6 +1179,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "will-smith-slap",
+    example: "Slapping over “autocorrect changing my word for the third time.”",
     name: "Will Smith Slapping Chris Rock",
     image: "https://i.imgflip.com/6a9d61.png",
     viralDate: "2022-03-15",
@@ -1068,6 +1189,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "two-guys-on-a-bus",
+    example: "Happy guy at the view: “pushes to main on Friday.” Sad guy at the wall: “maintains it.”",
     name: "Two Guys on a Bus",
     image: "https://i.imgflip.com/5v6gwj.jpg",
     viralDate: "2022-06-15",
@@ -1077,6 +1199,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "corn-kid",
+    example: "“It’s got the juice. I can’t imagine a more beautiful thing — it’s CORN.”",
     name: "It's Corn (Corn Kid)",
     image: "https://i.imgflip.com/6syaus.jpg",
     viralDate: "2022-08-15",
@@ -1086,6 +1209,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "megamind-peeking",
+    example: "Peeking around the corner: “no way you actually replied-all to the whole company.”",
     name: "Megamind Peeking",
     image: "https://i.imgflip.com/64sz4u.png",
     viralDate: "2022-09-15",
@@ -1095,6 +1219,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "wednesday-dance",
+    example: "The jerky goth dance captioned “me vibing the second everyone leaves the office.”",
     name: "Wednesday Addams Dance",
     image: "https://i.imgflip.com/73z99t.jpg",
     viralDate: "2022-11-15",
@@ -1104,6 +1229,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "john-pork",
+    example: "Incoming call: “John Pork is calling…” — do you answer?",
     name: "John Pork Is Calling",
     image: "https://i.imgflip.com/7ju95g.png",
     viralDate: "2023-03-15",
@@ -1113,6 +1239,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "grimace-shake",
+    example: "“Trying the Grimace shake… *cut to me on the floor.*”",
     name: "Grimace Shake",
     image: "https://i.imgflip.com/7qzqt6.jpg",
     viralDate: "2023-06-15",
@@ -1122,6 +1249,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "absolute-cinema",
+    example: "Scorsese, arms raised: “that season finale? Absolute cinema.”",
     name: "Absolute Cinema",
     image: "https://i.imgflip.com/8d317n.png",
     viralDate: "2024-05-15",
@@ -1131,6 +1259,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "hawk-tuah",
+    example: "Dropped as the punchline soundbite to any cheeky innuendo setup.",
     name: "Hawk Tuah",
     image: "https://i.imgflip.com/8uh5gc.png",
     viralDate: "2024-06-15",
@@ -1140,6 +1269,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "moo-deng",
+    example: "“Moo Deng energy: chaotic, slippery, refuses to cooperate — that’s me before coffee.”",
     name: "Moo Deng",
     image: "https://i.imgflip.com/93qc5f.png",
     viralDate: "2024-09-15",
@@ -1149,6 +1279,7 @@ export const MEMES: Meme[] = [
   },
   {
     id: "chill-guy",
+    example: "Shrugging dog: “Failed the exam? Eh. Just a chill guy.”",
     name: "Just a Chill Guy",
     image: "https://i.imgflip.com/9axcnp.jpg",
     viralDate: "2024-11-15",

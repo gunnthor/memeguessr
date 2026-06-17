@@ -32,7 +32,10 @@ export function Game({ seed, mode }: { seed: number; mode: string }) {
   const actualDate = new Date(meme.viralDate);
   const guessDate = sliderToDate(slider);
   const isLastRound = roundIndex === rounds.length - 1;
-  const gameOver = results.length === rounds.length;
+  // Hold on the final round's reveal until the player dismisses it — only then
+  // fall through to the results screen. Otherwise locking in the last guess
+  // would skip straight past its reveal (date, accuracy, blurb, source).
+  const gameOver = results.length === rounds.length && !revealed;
 
   function submitGuess() {
     const score = scoreRound(guessDate, actualDate);
@@ -44,7 +47,10 @@ export function Game({ seed, mode }: { seed: number; mode: string }) {
   function nextRound() {
     setRevealed(false);
     setSlider(Math.floor(SLIDER_MAX / 2));
-    setRoundIndex((i) => i + 1);
+    // On the last round, leave roundIndex in place; clearing `revealed` flips
+    // gameOver true and the results screen takes over. Advancing would index
+    // past the deck and read an undefined meme.
+    if (!isLastRound) setRoundIndex((i) => i + 1);
   }
 
   if (gameOver) {
@@ -78,6 +84,7 @@ export function Game({ seed, mode }: { seed: number; mode: string }) {
         <Reveal
           memeName={meme.name}
           blurb={meme.blurb}
+          example={meme.example}
           source={meme.source}
           actualDate={actualDate}
           guessDate={guessDate}
@@ -87,6 +94,14 @@ export function Game({ seed, mode }: { seed: number; mode: string }) {
         />
       ) : (
         <div className="mt-6 flex flex-col gap-6">
+          {meme.example && (
+            <div className="rounded-lg border border-slate-800 bg-slate-950/50 px-4 py-3">
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                Example
+              </p>
+              <p className="text-sm italic text-slate-300">{meme.example}</p>
+            </div>
+          )}
           <TimelineSlider value={slider} onChange={setSlider} />
           <button
             onClick={submitGuess}
@@ -109,6 +124,7 @@ export function Game({ seed, mode }: { seed: number; mode: string }) {
 function Reveal({
   memeName,
   blurb,
+  example,
   source,
   actualDate,
   guessDate,
@@ -118,6 +134,7 @@ function Reveal({
 }: {
   memeName: string;
   blurb: string;
+  example?: string;
   source: string;
   actualDate: Date;
   guessDate: Date;
@@ -149,6 +166,14 @@ function Reveal({
         </p>
       </div>
       <p className="text-sm text-slate-400">{blurb}</p>
+      {example && (
+        <div className="rounded-lg border border-slate-800 bg-slate-950/50 px-4 py-3">
+          <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
+            Example
+          </p>
+          <p className="text-sm italic text-slate-300">{example}</p>
+        </div>
+      )}
       <a
         href={source}
         target="_blank"
