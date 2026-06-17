@@ -42,6 +42,24 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/xzibit-yo-dawg",
   },
   {
+    id: "x-all-the-y",
+    name: "X All the Y",
+    image: "https://i.imgflip.com/1bh9.jpg",
+    viralDate: "2010-06-15",
+    blurb:
+      "Allie Brosh's 'Clean ALL the things!' drawing spawned the manic 'X all the Y' format in 2010.",
+    source: "https://knowyourmeme.com/memes/x-all-the-things",
+  },
+  {
+    id: "too-damn-high",
+    name: "The Rent Is Too Damn High",
+    image: "https://i.imgflip.com/1bik.jpg",
+    viralDate: "2010-10-15",
+    blurb:
+      "Jimmy McMillan's 2010 NY debate line became the 'X is too damn high' template overnight.",
+    source: "https://knowyourmeme.com/memes/the-rent-is-too-damn-high",
+  },
+  {
     id: "one-does-not-simply",
     name: "One Does Not Simply",
     image: "https://i.imgflip.com/1bij.jpg",
@@ -49,6 +67,15 @@ export const MEMES: Meme[] = [
     blurb:
       "Boromir's 'One does not simply walk into Mordor' became a top advice-animal format in 2011.",
     source: "https://knowyourmeme.com/memes/one-does-not-simply-walk-into-mordor",
+  },
+  {
+    id: "scumbag-steve",
+    name: "Scumbag Steve",
+    image: "https://i.imgflip.com/1bgy.jpg",
+    viralDate: "2011-01-15",
+    blurb:
+      "A backwards-cap teen in a doorway became the face of jerk behavior in early 2011.",
+    source: "https://knowyourmeme.com/memes/scumbag-steve",
   },
   {
     id: "futurama-fry",
@@ -69,6 +96,51 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/ancient-aliens",
   },
   {
+    id: "most-interesting-man",
+    name: "The Most Interesting Man in the World",
+    image: "https://i.imgflip.com/1bh8.jpg",
+    viralDate: "2011-03-15",
+    blurb:
+      "The Dos Equis pitchman's 'I don't always X, but when I do…' became a 2011 macro classic.",
+    source: "https://knowyourmeme.com/memes/the-most-interesting-man-in-the-world",
+  },
+  {
+    id: "success-kid",
+    name: "Success Kid",
+    image: "https://i.imgflip.com/1bhk.jpg",
+    viralDate: "2011-04-15",
+    blurb:
+      "A fist-clenching baby (photo 2007) became the face of small victories as a macro in 2011.",
+    source: "https://knowyourmeme.com/memes/success-kid-i-hate-sandcastles",
+  },
+  {
+    id: "y-u-no",
+    name: "Y U No",
+    image: "https://i.imgflip.com/1bh3.jpg",
+    viralDate: "2011-05-15",
+    blurb:
+      "A stick-figure 'Y U NO do X?!' rage face spread across forums in 2011.",
+    source: "https://knowyourmeme.com/memes/y-u-no-guy",
+  },
+  {
+    id: "philosoraptor",
+    name: "Philosoraptor",
+    image: "https://i.imgflip.com/1bgs.jpg",
+    viralDate: "2011-06-15",
+    blurb:
+      "A pondering velociraptor became the vessel for faux-deep questions, peaking around 2011.",
+    source: "https://knowyourmeme.com/memes/philosoraptor",
+  },
+  {
+    id: "good-guy-greg",
+    name: "Good Guy Greg",
+    image: "https://i.imgflip.com/1bgx.jpg",
+    viralDate: "2011-08-15",
+    blurb:
+      "A smiling smoker became the patron saint of considerate behavior in 2011.",
+    source: "https://knowyourmeme.com/memes/good-guy-greg",
+  },
+  {
     id: "hide-the-pain-harold",
     name: "Hide the Pain Harold",
     image: "https://i.imgflip.com/gk5el.jpg",
@@ -76,6 +148,24 @@ export const MEMES: Meme[] = [
     blurb:
       "Stock-photo model András Arató's strained smile became the face of concealed pain around 2011.",
     source: "https://knowyourmeme.com/memes/hide-the-pain-harold",
+  },
+  {
+    id: "socially-awkward-penguin",
+    name: "Socially Awkward Penguin",
+    image: "https://i.imgflip.com/1bio.jpg",
+    viralDate: "2011-09-15",
+    blurb:
+      "A flustered penguin on a blue diamond captioned everyday social mishaps from 2011.",
+    source: "https://knowyourmeme.com/memes/socially-awkward-penguin",
+  },
+  {
+    id: "first-world-problems",
+    name: "First World Problems",
+    image: "https://i.imgflip.com/1bhf.jpg",
+    viralDate: "2011-10-15",
+    blurb:
+      "A crying woman fronted ironic complaints about trivial 'hardships' from late 2011.",
+    source: "https://knowyourmeme.com/memes/first-world-problems",
   },
   {
     id: "x-everywhere",
@@ -87,6 +177,51 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/x-x-everywhere",
   },
   {
+    id: "brace-yourselves",
+    name: "Brace Yourselves (X Is Coming)",
+    image: "https://i.imgflip.com/1bhm.jpg",
+    viralDate: "2012-01-15",
+    blurb:
+      "Ned Stark's 'Brace yourselves, X is coming' became a Game of Thrones macro in 2012.",
+    source: "https://knowyourmeme.com/memes/brace-yourselves-winter-is-coming",
+  },
+  {
+    id: "bad-luck-brian",
+    name: "Bad Luck Brian",
+    image: "https://i.imgflip.com/1bip.jpg",
+    viralDate: "2012-01-15",
+    blurb:
+      "A hapless yearbook portrait became the face of catastrophic misfortune in early 2012.",
+    source: "https://knowyourmeme.com/memes/bad-luck-brian",
+  },
+  {
+    id: "matrix-morpheus",
+    name: "Matrix Morpheus (What If I Told You)",
+    image: "https://i.imgflip.com/25w3.jpg",
+    viralDate: "2012-02-15",
+    blurb:
+      "Morpheus's 'What if I told you…' became a know-it-all reveal format in 2012.",
+    source: "https://knowyourmeme.com/memes/matrix-morpheus",
+  },
+  {
+    id: "ermahgerd",
+    name: "Ermahgerd",
+    image: "https://i.imgflip.com/26ae.jpg",
+    viralDate: "2012-03-15",
+    blurb:
+      "A retainer-wearing girl clutching Goosebumps books birthed the 'ERMAHGERD' phonetic meme in 2012.",
+    source: "https://knowyourmeme.com/memes/ermahgerd",
+  },
+  {
+    id: "confession-bear",
+    name: "Confession Bear",
+    image: "https://i.imgflip.com/25wb.jpg",
+    viralDate: "2012-03-15",
+    blurb:
+      "A bear resting its head became the vessel for guilty confessions on Reddit in 2012.",
+    source: "https://knowyourmeme.com/memes/confession-bear",
+  },
+  {
     id: "skeptical-third-world-kid",
     name: "Third World Skeptical Kid",
     image: "https://i.imgflip.com/265k.jpg",
@@ -94,6 +229,15 @@ export const MEMES: Meme[] = [
     blurb:
       "A squinting kid became the face of skeptical 'so you're telling me…' captions in 2012.",
     source: "https://knowyourmeme.com/memes/skeptical-third-world-kid",
+  },
+  {
+    id: "10-guy",
+    name: "10 Guy (Stoner Stanley)",
+    image: "https://i.imgflip.com/269s.jpg",
+    viralDate: "2012-04-15",
+    blurb:
+      "A wide-eyed, very high partygoer became the face of stoned non-logic in 2012.",
+    source: "https://knowyourmeme.com/memes/10-guy",
   },
   {
     id: "grandma-finds-internet",
@@ -105,6 +249,51 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/grandma-finds-the-internet",
   },
   {
+    id: "skeptical-baby",
+    name: "Skeptical Baby",
+    image: "https://i.imgflip.com/26hb.jpg",
+    viralDate: "2012-05-15",
+    blurb:
+      "A squinting baby's side-eye became shorthand for doubt and disbelief in 2012.",
+    source: "https://knowyourmeme.com/memes/skeptical-baby",
+  },
+  {
+    id: "overly-attached-girlfriend",
+    name: "Overly Attached Girlfriend",
+    image: "https://i.imgflip.com/25w8.jpg",
+    viralDate: "2012-06-15",
+    blurb:
+      "Laina Morris's unblinking stare became the face of clingy obsession in mid-2012.",
+    source: "https://knowyourmeme.com/memes/overly-attached-girlfriend",
+  },
+  {
+    id: "aint-nobody-got-time",
+    name: "Ain't Nobody Got Time for That",
+    image: "https://i.imgflip.com/9hhr.jpg",
+    viralDate: "2012-10-15",
+    blurb:
+      "Sweet Brown's news-interview quip became a viral catchphrase and macro in late 2012.",
+    source: "https://knowyourmeme.com/memes/aint-nobody-got-time-for-that-sweet-brown",
+  },
+  {
+    id: "conspiracy-keanu",
+    name: "Conspiracy Keanu",
+    image: "https://i.imgflip.com/1bin.jpg",
+    viralDate: "2012-11-15",
+    blurb:
+      "A wide-eyed Keanu Reeves fronted mind-blown 'what if…' conspiracy musings in 2012.",
+    source: "https://knowyourmeme.com/memes/conspiracy-keanu",
+  },
+  {
+    id: "grumpy-cat",
+    name: "Grumpy Cat",
+    image: "https://i.imgflip.com/8p0a.jpg",
+    viralDate: "2012-12-15",
+    blurb:
+      "Tardar Sauce's permanent scowl made her the internet's mascot of negativity in late 2012.",
+    source: "https://knowyourmeme.com/memes/grumpy-cat",
+  },
+  {
     id: "oprah-you-get-a",
     name: "Oprah You Get A",
     image: "https://i.imgflip.com/gtj5t.jpg",
@@ -112,6 +301,33 @@ export const MEMES: Meme[] = [
     blurb:
       "Oprah's giveaway 'You get an X! Everybody gets an X!' became a reaction template by 2013.",
     source: "https://knowyourmeme.com/memes/oprahs-favorite-things",
+  },
+  {
+    id: "sudden-clarity-clarence",
+    name: "Sudden Clarity Clarence",
+    image: "https://i.imgflip.com/25w4.jpg",
+    viralDate: "2013-01-15",
+    blurb:
+      "A party-goer's wide-eyed epiphany became the face of sudden realizations in 2013.",
+    source: "https://knowyourmeme.com/memes/sudden-clarity-clarence",
+  },
+  {
+    id: "leonardo-cheers",
+    name: "Leonardo DiCaprio Cheers",
+    image: "https://i.imgflip.com/39t1o.jpg",
+    viralDate: "2013-05-15",
+    blurb:
+      "DiCaprio raising a glass in The Great Gatsby became a knowing toast meme in 2013.",
+    source: "https://knowyourmeme.com/memes/leonardo-dicaprios-cheers",
+  },
+  {
+    id: "im-the-captain-now",
+    name: "I'm the Captain Now",
+    image: "https://i.imgflip.com/hlmst.jpg",
+    viralDate: "2013-11-15",
+    blurb:
+      "Barkhad Abdi's 'Look at me — I'm the captain now' from Captain Phillips became a 2013 line.",
+    source: "https://knowyourmeme.com/memes/look-at-me-im-the-captain-now",
   },
   {
     id: "but-thats-none-of-my-business",
@@ -159,6 +375,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/this-is-fine",
   },
   {
+    id: "be-like-bill",
+    name: "Be Like Bill",
+    image: "https://i.imgflip.com/xh3me.jpg",
+    viralDate: "2016-01-15",
+    blurb:
+      "A stick-figure 'Bill' modeling sensible behavior became a viral chain meme in early 2016.",
+    source: "https://knowyourmeme.com/memes/be-like-bill",
+  },
+  {
     id: "squidward-window",
     name: "Squidward Looking Out the Window",
     image: "https://i.imgflip.com/145qvv.jpg",
@@ -184,6 +409,24 @@ export const MEMES: Meme[] = [
     blurb:
       "The sweating man agonizing over two buttons took off as a decision meme in mid-2016.",
     source: "https://knowyourmeme.com/memes/daily-struggle",
+  },
+  {
+    id: "math-lady",
+    name: "Math Lady / Confused Lady",
+    image: "https://i.imgflip.com/1c81c1.jpg",
+    viralDate: "2016-06-15",
+    blurb:
+      "A Brazilian telenovela actress overlaid with math formulas became the confusion meme in 2016.",
+    source: "https://knowyourmeme.com/memes/math-lady-confused-lady",
+  },
+  {
+    id: "arthur-fist",
+    name: "Arthur Fist",
+    image: "https://i.imgflip.com/1866qe.jpg",
+    viralDate: "2016-08-15",
+    blurb:
+      "Arthur the aardvark's clenched fist became the icon of suppressed frustration in 2016.",
+    source: "https://knowyourmeme.com/memes/arthurs-fist",
   },
   {
     id: "sad-pablo-escobar",
@@ -230,6 +473,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/expanding-brain",
   },
   {
+    id: "maury-lie-detector",
+    name: "Maury Lie Detector",
+    image: "https://i.imgflip.com/9iz9.jpg",
+    viralDate: "2017-02-15",
+    blurb:
+      "Maury's 'that was a lie' reveal became the format for calling out obvious untruths in 2017.",
+    source: "https://knowyourmeme.com/memes/the-lie-detector-determined-that-was-a-lie",
+  },
+  {
     id: "sleeping-shaq",
     name: "Sleeping Shaq",
     image: "https://i.imgflip.com/1nck6k.jpg",
@@ -237,6 +489,15 @@ export const MEMES: Meme[] = [
     blurb:
       "Shaq unbothered then hyped became the 'what I ignore vs. what excites me' meme in 2017.",
     source: "https://knowyourmeme.com/memes/sleeping-shaq",
+  },
+  {
+    id: "friendship-ended",
+    name: "Friendship Ended (with Mudasir)",
+    image: "https://i.imgflip.com/29v4rt.jpg",
+    viralDate: "2017-04-15",
+    blurb:
+      "A Facebook post declaring a new best friend became the 'friendship ended with X' meme in 2017.",
+    source: "https://knowyourmeme.com/memes/friendship-ended-with-mudasir",
   },
   {
     id: "who-killed-hannibal",
@@ -264,6 +525,15 @@ export const MEMES: Meme[] = [
     blurb:
       "A seeker finds a scroll, reads an unwelcome truth, and screams 'NO!' — viral mid-2017.",
     source: "https://knowyourmeme.com/memes/the-scroll-of-truth",
+  },
+  {
+    id: "unsettled-tom",
+    name: "Unsettled Tom",
+    image: "https://i.imgflip.com/2wifvo.jpg",
+    viralDate: "2017-06-15",
+    blurb:
+      "A side-eyeing Tom the cat became the face of quiet suspicion and discomfort in 2017.",
+    source: "https://knowyourmeme.com/memes/unsettled-tom",
   },
   {
     id: "running-away-balloon",
@@ -365,6 +635,24 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/spider-man-pointing-at-spider-man",
   },
   {
+    id: "flex-tape",
+    name: "Flex Tape (Phil Swift)",
+    image: "https://i.imgflip.com/2reqtg.png",
+    viralDate: "2018-07-15",
+    blurb:
+      "Phil Swift slapping Flex Tape on everything ('that's a lot of damage!') became a 2018 meme.",
+    source: "https://knowyourmeme.com/memes/phil-swift-flex-tape",
+  },
+  {
+    id: "hard-to-swallow-pills",
+    name: "Hard to Swallow Pills",
+    image: "https://i.imgflip.com/271ps6.jpg",
+    viralDate: "2018-07-15",
+    blurb:
+      "A pill bottle labeled with uncomfortable truths became a blunt-honesty meme in 2018.",
+    source: "https://knowyourmeme.com/memes/hard-to-swallow-pills",
+  },
+  {
     id: "epic-handshake",
     name: "Epic Handshake (Predator)",
     image: "https://i.imgflip.com/28j0te.jpg",
@@ -372,6 +660,15 @@ export const MEMES: Meme[] = [
     blurb:
       "The Predator forearm clasp became the 'two things united by a shared trait' meme in 2018.",
     source: "https://knowyourmeme.com/memes/epic-handshake",
+  },
+  {
+    id: "car-salesman-slaps-roof",
+    name: "Car Salesman Slaps Roof",
+    image: "https://i.imgflip.com/2d3al6.jpg",
+    viralDate: "2018-09-15",
+    blurb:
+      "'This bad boy can fit so much X in it' — a salesman pitching a car — caught on in late 2018.",
+    source: "https://knowyourmeme.com/memes/this-bad-boy-can-fit-so-much-in-it",
   },
   {
     id: "surprised-pikachu",
@@ -401,6 +698,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/tuxedo-winnie-the-pooh",
   },
   {
+    id: "well-yes-but-actually-no",
+    name: "Well Yes, But Actually No",
+    image: "https://i.imgflip.com/2tn11b.jpg",
+    viralDate: "2019-01-15",
+    blurb:
+      "A flat-capped chimp's 'well yes, but actually no' became a contradiction meme in 2019.",
+    source: "https://knowyourmeme.com/memes/well-yes-but-actually-no",
+  },
+  {
     id: "three-headed-dragon",
     name: "Three-Headed Dragon",
     image: "https://i.imgflip.com/33e92f.jpg",
@@ -419,6 +725,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/clown-applying-makeup",
   },
   {
+    id: "me-and-the-boys",
+    name: "Me and the Boys",
+    image: "https://i.imgflip.com/320xfw.jpg",
+    viralDate: "2019-04-15",
+    blurb:
+      "A Calvin & Hobbes-derived gang of grinning kids became the 'me and the boys' meme in 2019.",
+    source: "https://knowyourmeme.com/memes/me-and-the-boys",
+  },
+  {
     id: "woman-yelling-cat",
     name: "Woman Yelling at a Cat",
     image: "https://i.imgflip.com/345v97.jpg",
@@ -428,6 +743,33 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/woman-yelling-at-a-cat",
   },
   {
+    id: "ight-imma-head-out",
+    name: "SpongeBob: Ight Imma Head Out",
+    image: "https://i.imgflip.com/392xtu.jpg",
+    viralDate: "2019-05-15",
+    blurb:
+      "SpongeBob rising from a chair captioned 'ight imma head out' became a 2019 exit meme.",
+    source: "https://knowyourmeme.com/memes/ight-imma-head-out",
+  },
+  {
+    id: "stonks",
+    name: "Stonks",
+    image: "https://i.imgflip.com/3388rw.png",
+    viralDate: "2019-06-15",
+    blurb:
+      "A 'Meme Man' before a rising stock chart misspelled 'stonks' became finance-fail shorthand in 2019.",
+    source: "https://knowyourmeme.com/memes/stonks",
+  },
+  {
+    id: "kombucha-girl",
+    name: "Kombucha Girl",
+    image: "https://i.imgflip.com/39osmx.png",
+    viralDate: "2019-08-15",
+    blurb:
+      "Brittany Tomlinson's first-sip reaction to kombucha became the indecision meme in 2019.",
+    source: "https://knowyourmeme.com/memes/kombucha-girl",
+  },
+  {
     id: "soldier-sleeping-child",
     name: "Soldier Protecting Sleeping Child",
     image: "https://i.imgflip.com/2tzo2k.jpg",
@@ -435,6 +777,24 @@ export const MEMES: Meme[] = [
     blurb:
       "A soldier shielding a sleeping child became a 'thing that protects me from a worse thing' meme.",
     source: "https://knowyourmeme.com/memes/soldier-protecting-sleeping-child",
+  },
+  {
+    id: "sure-grandma",
+    name: "Sure Grandma, Let's Get You to Bed",
+    image: "https://i.imgflip.com/4flche.jpg",
+    viralDate: "2019-10-15",
+    blurb:
+      "A newspaper clipping dismissing grandma's ramblings became the 'sure, grandma' meme in 2019.",
+    source: "https://knowyourmeme.com/memes/sure-grandma-lets-get-you-to-bed",
+  },
+  {
+    id: "bernie-once-again-asking",
+    name: "Bernie: I Am Once Again Asking",
+    image: "https://i.imgflip.com/3oevdk.jpg",
+    viralDate: "2019-11-15",
+    blurb:
+      "Bernie Sanders's 'I am once again asking for your financial support' video became a 2019 template.",
+    source: "https://knowyourmeme.com/memes/i-am-once-again-asking-for-your-financial-support",
   },
   {
     id: "buff-doge-cheems",
@@ -455,6 +815,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/corporate-needs-you-to-find-the-differences",
   },
   {
+    id: "yes-chad",
+    name: "Soyboy vs. Yes Chad",
+    image: "https://i.imgflip.com/3umnr3.jpg",
+    viralDate: "2020-01-15",
+    blurb:
+      "The stoic blond 'Yes' Chad shrugging off a ranting soyboy became a confidence meme by 2020.",
+    source: "https://knowyourmeme.com/memes/nordic-gamer-yes-chad",
+  },
+  {
     id: "panik-kalm-panik",
     name: "Panik Kalm Panik",
     image: "https://i.imgflip.com/3qqcim.png",
@@ -462,6 +831,15 @@ export const MEMES: Meme[] = [
     blurb:
       "A three-panel meme figure cycling panic → calm → panic took off in early 2020.",
     source: "https://knowyourmeme.com/memes/panik-kalm-panik",
+  },
+  {
+    id: "mr-incredible-mad",
+    name: "Mr. Incredible Mad",
+    image: "https://i.imgflip.com/39sjn7.png",
+    viralDate: "2020-04-15",
+    blurb:
+      "A glaring Mr. Incredible captioned the moment a small annoyance tips you over the edge, ~2020.",
+    source: "https://knowyourmeme.com/memes/mr-incredible-becoming-angry",
   },
   {
     id: "i-bet-hes-thinking",
@@ -500,6 +878,24 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/they-dont-know",
   },
   {
+    id: "giga-chad",
+    name: "Giga Chad",
+    image: "https://i.imgflip.com/35bdwf.jpg",
+    viralDate: "2021-06-15",
+    blurb:
+      "Ernest Khalimov's chiseled black-and-white portrait became the ultimate 'Chad' ideal by 2021.",
+    source: "https://knowyourmeme.com/memes/gigachad",
+  },
+  {
+    id: "gus-fring-not-the-same",
+    name: "Gus Fring: We Are Not the Same",
+    image: "https://i.imgflip.com/5o32tt.png",
+    viralDate: "2021-07-15",
+    blurb:
+      "A composed Gus Fring captioned 'I am not the same as you' became a superiority meme in 2021.",
+    source: "https://knowyourmeme.com/memes/we-are-not-the-same",
+  },
+  {
     id: "megamind-no-bitches",
     name: "Megamind (No Bitches?)",
     image: "https://i.imgflip.com/65939r.jpg",
@@ -527,6 +923,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/trade-offer",
   },
   {
+    id: "squid-game",
+    name: "Squid Game (Red Light)",
+    image: "https://i.imgflip.com/98qr33.jpg",
+    viralDate: "2021-10-15",
+    blurb:
+      "Netflix's Squid Game became a global phenomenon and meme fountain in October 2021.",
+    source: "https://knowyourmeme.com/memes/subcultures/squid-game",
+  },
+  {
     id: "bell-curve-midwit",
     name: "IQ Bell Curve (Midwit)",
     image: "https://i.imgflip.com/8tw3vb.png",
@@ -536,6 +941,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/iq-bell-curve-midwit",
   },
   {
+    id: "will-smith-slap",
+    name: "Will Smith Slapping Chris Rock",
+    image: "https://i.imgflip.com/6a9d61.png",
+    viralDate: "2022-03-15",
+    blurb:
+      "Will Smith slapping Chris Rock at the Oscars on March 27, 2022 instantly became a meme template.",
+    source: "https://knowyourmeme.com/memes/events/will-smith-slapping-chris-rock",
+  },
+  {
     id: "two-guys-on-a-bus",
     name: "Two Guys on a Bus",
     image: "https://i.imgflip.com/5v6gwj.jpg",
@@ -543,6 +957,15 @@ export const MEMES: Meme[] = [
     blurb:
       "A painting of two bus riders — one facing a wall, one a view — became an outlook meme in 2022.",
     source: "https://knowyourmeme.com/memes/two-guys-on-a-bus",
+  },
+  {
+    id: "megamind-peeking",
+    name: "Megamind Peeking",
+    image: "https://i.imgflip.com/64sz4u.png",
+    viralDate: "2022-09-15",
+    blurb:
+      "Megamind peeking around a corner became a 'no way you actually did X' reaction meme in 2022.",
+    source: "https://knowyourmeme.com/memes/megamind-peeking-you-wouldnt-get-hit-by-the-train-if-you-stayed-on-the-bench",
   },
   {
     id: "absolute-cinema",
