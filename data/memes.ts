@@ -42,6 +42,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/xzibit-yo-dawg",
   },
   {
+    id: "batman-slapping-robin",
+    name: "Batman Slapping Robin (My Parents Are Dead)",
+    image: "https://i.imgflip.com/9ehk.jpg",
+    viralDate: "2009-11-15",
+    blurb:
+      "A 1965 comic panel of Batman slapping Robin became an editable speech-bubble macro once a generator launched in 2009.",
+    source: "https://knowyourmeme.com/memes/my-parents-are-dead-batman-slapping-robin",
+  },
+  {
     id: "x-all-the-y",
     name: "X All the Y",
     image: "https://i.imgflip.com/1bh9.jpg",
@@ -276,6 +285,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/aint-nobody-got-time-for-that-sweet-brown",
   },
   {
+    id: "bike-fall",
+    name: "Bike Fall (Baton Roue)",
+    image: "https://i.imgflip.com/1b42wl.jpg",
+    viralDate: "2012-10-15",
+    blurb:
+      "A cyclist jamming a stick into his own front wheel — Corentin Penloup's comic — spread as a self-sabotage meme via Reddit in 2012.",
+    source: "https://knowyourmeme.com/memes/baton-roue",
+  },
+  {
     id: "conspiracy-keanu",
     name: "Conspiracy Keanu",
     image: "https://i.imgflip.com/1bin.jpg",
@@ -328,6 +346,15 @@ export const MEMES: Meme[] = [
     blurb:
       "Barkhad Abdi's 'Look at me — I'm the captain now' from Captain Phillips became a 2013 line.",
     source: "https://knowyourmeme.com/memes/look-at-me-im-the-captain-now",
+  },
+  {
+    id: "yall-got-any-more",
+    name: "Y'all Got Any More of...",
+    image: "https://i.imgflip.com/21uy0f.jpg",
+    viralDate: "2013-12-15",
+    blurb:
+      "Dave Chappelle's Tyrone Biggums fronted the craving-for-more 'y'all got any more of…' macro, breaking out in late 2013.",
+    source: "https://knowyourmeme.com/memes/yall-got-anymore-of-tyrone-biggums",
   },
   {
     id: "but-thats-none-of-my-business",
@@ -456,6 +483,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/roll-safe",
   },
   {
+    id: "trump-bill-signing",
+    name: "Trump Bill Signing",
+    image: "https://i.imgflip.com/1ii4oc.jpg",
+    viralDate: "2017-01-23",
+    blurb:
+      "Trump proudly holding up a freshly signed executive order in January 2017 became a blank-document caption template.",
+    source: "https://knowyourmeme.com/memes/trumps-first-order-of-business",
+  },
+  {
     id: "left-exit-12",
     name: "Left Exit 12 Off Ramp",
     image: "https://i.imgflip.com/22bdq6.jpg",
@@ -534,6 +570,15 @@ export const MEMES: Meme[] = [
     blurb:
       "A side-eyeing Tom the cat became the face of quiet suspicion and discomfort in 2017.",
     source: "https://knowyourmeme.com/memes/unsettled-tom",
+  },
+  {
+    id: "inhaling-seagull",
+    name: "Inhaling Seagull",
+    image: "https://i.imgflip.com/1w7ygt.jpg",
+    viralDate: "2017-07-15",
+    blurb:
+      "A seagull caught mid-inhale, beak agape, became the 'about to belt out X' reaction meme around 2017.",
+    source: "https://knowyourmeme.com/memes/inhaling-seagull",
   },
   {
     id: "running-away-balloon",
@@ -626,6 +671,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/awkward-look-monkey-puppet",
   },
   {
+    id: "scooby-doo-mask-reveal",
+    name: "Scooby-Doo Mask Reveal",
+    image: "https://i.imgflip.com/2eeunw.jpg",
+    viralDate: "2018-06-15",
+    blurb:
+      "The 'let's see who this really is' unmasking from Scooby-Doo became an exploitable for exposing X as Y around 2018.",
+    source: "https://knowyourmeme.com/memes/lets-see-who-this-really-is",
+  },
+  {
     id: "spiderman-pointing",
     name: "Spider-Man Pointing at Spider-Man",
     image: "https://i.imgflip.com/1tkjq9.jpg",
@@ -707,6 +761,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/well-yes-but-actually-no",
   },
   {
+    id: "marked-safe-from",
+    name: "Marked Safe From X",
+    image: "https://i.imgflip.com/2odckz.jpg",
+    viralDate: "2019-01-15",
+    blurb:
+      "A parody of Facebook's Safety Check — 'marked safe from X' — hit its first viral wave in early 2019.",
+    source: "https://knowyourmeme.com/memes/marked-safe-from-x",
+  },
+  {
     id: "three-headed-dragon",
     name: "Three-Headed Dragon",
     image: "https://i.imgflip.com/33e92f.jpg",
@@ -779,6 +842,24 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/soldier-protecting-sleeping-child",
   },
   {
+    id: "you-guys-getting-paid",
+    name: "You Guys Are Getting Paid?",
+    image: "https://i.imgflip.com/2xscjb.png",
+    viralDate: "2019-09-15",
+    blurb:
+      "The incredulous 'you guys are getting paid?' reaction became shorthand for doing unpaid work others got compensated for, in 2019.",
+    source: "https://knowyourmeme.com/memes/you-guys-are-getting-paid",
+  },
+  {
+    id: "all-my-homies-hate",
+    name: "All My Homies Hate / Use",
+    image: "https://i.imgflip.com/3kwur5.jpg",
+    viralDate: "2019-09-15",
+    blurb:
+      "The 'F— X, all my homies hate X' snowclone over a group photo surged across Reddit and iFunny in 2019.",
+    source: "https://knowyourmeme.com/memes/fuck-x-all-my-homies-use-y",
+  },
+  {
     id: "sure-grandma",
     name: "Sure Grandma, Let's Get You to Bed",
     image: "https://i.imgflip.com/4flche.jpg",
@@ -824,6 +905,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/nordic-gamer-yes-chad",
   },
   {
+    id: "grant-gustin-grave",
+    name: "Grant Gustin Next to Oliver Queen's Grave",
+    image: "https://i.imgflip.com/3nx72a.png",
+    viralDate: "2020-01-28",
+    blurb:
+      "Grant Gustin throwing a peace sign by Oliver Queen's grave became an object-labeling meme after going viral in early 2020.",
+    source: "https://knowyourmeme.com/memes/grant-gustin-next-to-oliver-queens-grave",
+  },
+  {
     id: "panik-kalm-panik",
     name: "Panik Kalm Panik",
     image: "https://i.imgflip.com/3qqcim.png",
@@ -833,6 +923,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/panik-kalm-panik",
   },
   {
+    id: "anime-girl-terminator",
+    name: "Anime Girl Hiding from a Terminator",
+    image: "https://i.imgflip.com/3po4m7.jpg",
+    viralDate: "2020-02-15",
+    blurb:
+      "Fan art of an anime girl cowering under a desk from a T-800 became an object-labeling format in February 2020.",
+    source: "https://knowyourmeme.com/memes/anime-girl-hiding-from-a-terminator",
+  },
+  {
     id: "mr-incredible-mad",
     name: "Mr. Incredible Mad",
     image: "https://i.imgflip.com/39sjn7.png",
@@ -840,6 +939,15 @@ export const MEMES: Meme[] = [
     blurb:
       "A glaring Mr. Incredible captioned the moment a small annoyance tips you over the edge, ~2020.",
     source: "https://knowyourmeme.com/memes/mr-incredible-becoming-angry",
+  },
+  {
+    id: "undertaker-aj-styles",
+    name: "Undertaker Standing Behind AJ Styles",
+    image: "https://i.imgflip.com/3vfrmx.jpg",
+    viralDate: "2020-04-15",
+    blurb:
+      "From WrestleMania 36's Boneyard Match, the Undertaker looming behind a smug AJ Styles became a 2020 object-label meme.",
+    source: "https://knowyourmeme.com/memes/undertaker-standing-behind-aj-styles",
   },
   {
     id: "i-bet-hes-thinking",
@@ -858,6 +966,15 @@ export const MEMES: Meme[] = [
     blurb:
       "DiCaprio laughing and pointing from Django became a 'pointing at relatable content' meme.",
     source: "https://knowyourmeme.com/memes/laughing-leo",
+  },
+  {
+    id: "communist-bugs-bunny",
+    name: "Communist Bugs Bunny",
+    image: "https://i.imgflip.com/44eggm.png",
+    viralDate: "2020-07-15",
+    blurb:
+      "Bugs Bunny declaring 'our' over a hammer-and-sickle became the 'no individual ownership' joke meme in 2020.",
+    source: "https://knowyourmeme.com/memes/communist-bugs-bunny",
   },
   {
     id: "always-has-been",
@@ -959,6 +1076,15 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/two-guys-on-a-bus",
   },
   {
+    id: "corn-kid",
+    name: "It's Corn (Corn Kid)",
+    image: "https://i.imgflip.com/6syaus.jpg",
+    viralDate: "2022-08-15",
+    blurb:
+      "Tariq, the 'Corn Kid,' gushing about corn in a Recess Therapy clip became a viral song and meme in August 2022.",
+    source: "https://knowyourmeme.com/memes/corn-kid",
+  },
+  {
     id: "megamind-peeking",
     name: "Megamind Peeking",
     image: "https://i.imgflip.com/64sz4u.png",
@@ -968,6 +1094,33 @@ export const MEMES: Meme[] = [
     source: "https://knowyourmeme.com/memes/megamind-peeking-you-wouldnt-get-hit-by-the-train-if-you-stayed-on-the-bench",
   },
   {
+    id: "wednesday-dance",
+    name: "Wednesday Addams Dance",
+    image: "https://i.imgflip.com/73z99t.jpg",
+    viralDate: "2022-11-15",
+    blurb:
+      "Jenna Ortega's jerky goth dance in Netflix's Wednesday sparked a huge TikTok recreation trend in November 2022.",
+    source: "https://knowyourmeme.com/memes/wednesday-dance-the-addams-family",
+  },
+  {
+    id: "john-pork",
+    name: "John Pork Is Calling",
+    image: "https://i.imgflip.com/7ju95g.png",
+    viralDate: "2023-03-15",
+    blurb:
+      "A pig-headed man in a selfie, 'John Pork,' fueled a surreal 'answer the call?' meme wave in early 2023.",
+    source: "https://knowyourmeme.com/memes/john-pork",
+  },
+  {
+    id: "grimace-shake",
+    name: "Grimace Shake",
+    image: "https://i.imgflip.com/7qzqt6.jpg",
+    viralDate: "2023-06-15",
+    blurb:
+      "McDonald's purple Grimace birthday shake spawned a faux-horror 'drink it then collapse' TikTok trend in June 2023.",
+    source: "https://knowyourmeme.com/memes/grimace-shake-trend",
+  },
+  {
     id: "absolute-cinema",
     name: "Absolute Cinema",
     image: "https://i.imgflip.com/8d317n.png",
@@ -975,5 +1128,32 @@ export const MEMES: Meme[] = [
     blurb:
       "A black-and-white Martin Scorsese raising his arms, captioned 'absolute cinema,' spread in 2024.",
     source: "https://knowyourmeme.com/memes/absolute-cinema",
+  },
+  {
+    id: "hawk-tuah",
+    name: "Hawk Tuah",
+    image: "https://i.imgflip.com/8uh5gc.png",
+    viralDate: "2024-06-15",
+    blurb:
+      "A street-interview clip in June 2024 turned its 'hawk tuah' soundbite into one of the year's biggest viral catchphrases.",
+    source: "https://knowyourmeme.com/memes/hawk-tuah",
+  },
+  {
+    id: "moo-deng",
+    name: "Moo Deng",
+    image: "https://i.imgflip.com/93qc5f.png",
+    viralDate: "2024-09-15",
+    blurb:
+      "Moo Deng, a pygmy hippo at a Thai zoo, became the internet's favorite chaotic baby animal in September 2024.",
+    source: "https://knowyourmeme.com/memes/moo-deng-the-baby-hippo",
+  },
+  {
+    id: "chill-guy",
+    name: "Just a Chill Guy",
+    image: "https://i.imgflip.com/9axcnp.jpg",
+    viralDate: "2024-11-15",
+    blurb:
+      "A nonchalant cartoon dog with his hands in his pockets — 'just a chill guy' — exploded across TikTok in November 2024.",
+    source: "https://knowyourmeme.com/memes/just-a-chill-guy-my-new-character",
   },
 ];

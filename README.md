@@ -72,7 +72,7 @@ Images in `data/memes.ts` are real meme templates hosted by **Imgflip**
    the original post, or a Google Trends peak). Accuracy is the whole game —
    the dates here are researched approximations, not gospel.
 3. Tighten `next.config.mjs` `remotePatterns` to only the image hosts you use.
-4. Grow the deck — 106 memes ship today (2008–2024); aim for 100+ over time so
+4. Grow the deck — 126 memes ship today (2008–2024); aim for 100+ over time so
    Daily has years of runway.
 
 ## Deploy to Vercel
