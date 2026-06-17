@@ -20,5 +20,7 @@ export default function PlayPage({
   // Daily mode: everyone gets the same memes today. Random: fresh each load.
   const seed = mode === "daily" ? dailySeed() : Math.floor(Math.random() * 1e9);
 
-  return <Game seed={seed} mode={mode} />;
+  // Key on mode+seed so navigating between Daily and Random remounts Game with
+  // fresh state instead of reusing the finished game's results screen.
+  return <Game key={`${mode}-${seed}`} seed={seed} mode={mode} />;
 }

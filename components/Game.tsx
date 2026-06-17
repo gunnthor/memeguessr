@@ -84,7 +84,6 @@ export function Game({ seed, mode }: { seed: number; mode: string }) {
         <Reveal
           memeName={meme.name}
           blurb={meme.blurb}
-          example={meme.example}
           source={meme.source}
           actualDate={actualDate}
           guessDate={guessDate}
@@ -124,7 +123,6 @@ export function Game({ seed, mode }: { seed: number; mode: string }) {
 function Reveal({
   memeName,
   blurb,
-  example,
   source,
   actualDate,
   guessDate,
@@ -134,7 +132,6 @@ function Reveal({
 }: {
   memeName: string;
   blurb: string;
-  example?: string;
   source: string;
   actualDate: Date;
   guessDate: Date;
@@ -166,14 +163,6 @@ function Reveal({
         </p>
       </div>
       <p className="text-sm text-slate-400">{blurb}</p>
-      {example && (
-        <div className="rounded-lg border border-slate-800 bg-slate-950/50 px-4 py-3">
-          <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
-            Example
-          </p>
-          <p className="text-sm italic text-slate-300">{example}</p>
-        </div>
-      )}
       <a
         href={source}
         target="_blank"
