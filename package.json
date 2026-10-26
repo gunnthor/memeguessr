@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:cursed-casting": "node --test tests/cursed-casting.test.cjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
