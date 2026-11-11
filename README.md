@@ -16,6 +16,53 @@ npm run build    # production build
 
 ## How it works
 
+### Guess the Reaction prototype
+
+Open `/prototype/guess-the-reaction` after starting the local server. The original
+date-guessing game remains at `/play`. No deployment or services are needed.
+
+This prototype has five authored situations, ten searchable reaction cards,
+45 hand-written responses, three optional ordered hints, and a five-guess limit.
+Each answer is an authored punchline; other reactions may fit the situation too.
+Results include native sharing, clipboard and visible-text fallbacks. Challenges
+use `?v=1&round=<stable-situation-id>` and start with fresh progress; invalid IDs
+or versions fall back to the first situation. Progress lives only in local React
+state, and Next situation visits all five situations before repeating.
+
+- Content, aliases, hints and validation: `data/guess-the-reaction.ts`.
+- Pure game transitions, search and challenge helpers: `lib/guess-the-reaction.ts`.
+- UI: `components/GuessTheReaction.tsx`; route-scoped CSS beside the page.
+- Checks: `npm run test:reaction`, `npx tsc --noEmit`, `npm run build`.
+
+Cards are image-first when assets are available, with optional visible captions
+and accessible names. The confirmation previews the selected reaction, the newest
+clue appears beside the collection, and the reveal pairs the situation with the
+full reaction. Hints are next to search on mobile and desktop. The full trail of
+guesses remains below the collection.
+
+All ten meme images now ship locally, reusing the original game's linked assets
+with the user's confirmed permission. Source URLs are recorded in
+`public/reactions/README.md`. Side Eye / Suspicious Look uses the original game's
+Skeptical Baby template.
+
+Open **Swap meme images** below the game to choose replacement images. Local
+previews stay in browser memory across rounds and retries, disappear on refresh,
+and are not uploaded or included in challenge links. JPG, PNG, WebP, GIF and AVIF
+are supported up to 6 MB per file; unreadable files leave the previous image intact.
+Replace and Use default let you manage each preview. This is a local playtest
+tool, not a public submission feature.
+
+For permanent cleared assets, add files under `/public/reactions/` and set each
+collection entry's optional `localImage` to its public path, such as
+`/reactions/harold.webp`. Images are contained without cropping so visual clues
+remain useful. Missing or broken images fall back to emoji with a visible name.
+Images have no target-specific treatment until the round ends.
+The selected answer is never marked in the initial UI or accessible labels.
+Content is bundled locally for a casual game, with no anti-cheat infrastructure.
+Local challenge URLs are reachable only where the local server is reachable.
+
+### Original game
+
 - **Core loop** — [components/Game.tsx](components/Game.tsx): show meme → timeline
   guess → reveal + score → next → results + share.
 - **Scoring** — [lib/game.ts](lib/game.ts): points fall off with an ~18-month
