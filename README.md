@@ -14,9 +14,44 @@ npm run dev      # http://localhost:3000
 npm run build    # production build
 ```
 
-## How it works
+## Cursed Casting prototype
 
-### Guess the Reaction prototype
+Open `/prototype/cursed-casting` to staff a wedding with four irreversible hires.
+The original game stays at `/play`. This prototype uses local text and emoji,
+with no additional dependencies, accounts, database, or external content calls.
+
+- `data/cursed-casting.ts`: six candidates, all 24 job consequences, four ending
+  variants, and role-specific cancellations.
+- `lib/cursed-casting.ts`: deterministic shuffle, validated challenges, guarded
+  game transitions, and the pure wedding resolver.
+- `lib/cursed-casting-share.ts`: native-share, clipboard, and manual-copy paths.
+- `components/CursedCasting.tsx`: the phone-friendly hiring flow and report.
+
+Challenge links use `?seed=1729&v=1`. Seeds are canonical decimal integers from
+1 through 4294967295. Missing or invalid seeds/versions safely use seed 1729
+and content v1; invalid supplied values also show a notice. The URL is normalized
+to the active seed/version. Every opening starts with empty jobs. Content v1
+freezes the deck order and shuffle algorithm; bump the version before changing
+that contract. There are 360 ordered candidate lineups. “New candidates” compares
+actual draws to guarantee a different lineup from the current one.
+
+Hire results describe what each character does. The final report then resolves
+fire creation/extinguishing, suppression/exposure, and cancellation. Canceled
+activities never block another hire’s fire effect. Distracted Boyfriend’s subject
+is the next candidate (wrapping to the first); immediate text says “the next hire”
+until that subject has been revealed, and the final report always names them.
+
+Run `npm run test:cursed-casting` for seed fixtures, assignment locking, all
+360 lineups × 24 job arrangements, and sharing failure paths. Run
+`npx tsc --noEmit` and `npm run build` for the project checks.
+
+For a manual smoke check, use a 360×640 viewport: select and confirm four empty
+jobs, continue after each consequence, read the complete report, replay, and
+open a challenge link to check the same order with fresh jobs. Try keyboard
+navigation and sharing too; denied clipboard access should expose selectable
+recap text and a challenge link. Also check the route at desktop width.
+
+## Guess the Reaction prototype
 
 Open `/prototype/guess-the-reaction` after starting the local server. The original
 date-guessing game remains at `/play`. No deployment or services are needed.
@@ -61,7 +96,7 @@ The selected answer is never marked in the initial UI or accessible labels.
 Content is bundled locally for a casual game, with no anti-cheat infrastructure.
 Local challenge URLs are reachable only where the local server is reachable.
 
-### Original game
+## How it works
 
 - **Core loop** — [components/Game.tsx](components/Game.tsx): show meme → timeline
   guess → reveal + score → next → results + share.
