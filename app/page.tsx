@@ -2,6 +2,21 @@ import Link from "next/link";
 import { MEMES } from "@/data/memes";
 import { MIN_YEAR, MAX_YEAR, ROUNDS_PER_GAME, MAX_GAME_SCORE } from "@/lib/game";
 
+const moreGames = [
+  {
+    href: "/prototype/guess-the-reaction",
+    emoji: "🫣",
+    title: "Guess the Reaction",
+    blurb: "Read the situation, follow the clues, find the hidden meme reaction in five guesses.",
+  },
+  {
+    href: "/prototype/cursed-casting",
+    emoji: "💒",
+    title: "Cursed Casting",
+    blurb: "Staff a wedding with meme characters. Four hires. No takebacks.",
+  },
+];
+
 const faqs = [
   {
     q: "What is MemeGuessr?",
@@ -61,6 +76,27 @@ export default function Home() {
         <p className="mt-10 text-sm text-slate-500">
           {MEMES.length} memes in the deck · timeline spans {MIN_YEAR}–{MAX_YEAR}
         </p>
+
+        <div className="mt-12 w-full max-w-xl">
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-slate-400">
+            More games
+          </h2>
+          <div className="mt-4 grid gap-3 text-left sm:grid-cols-2">
+            {moreGames.map((g) => (
+              <Link
+                key={g.href}
+                href={g.href}
+                className="group rounded-xl border border-slate-700 p-5 transition hover:border-brand hover:bg-slate-900"
+              >
+                <span className="text-2xl" aria-hidden="true">{g.emoji}</span>
+                <span className="mt-2 block text-lg font-semibold text-slate-100 group-hover:text-white">
+                  {g.title} <span aria-hidden="true">→</span>
+                </span>
+                <span className="mt-1 block text-sm text-slate-400">{g.blurb}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Indexable content for search engines + new players. */}
